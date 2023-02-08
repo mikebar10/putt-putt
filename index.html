@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <div>
+            <h1>Blue Chicken Mini Golf</h1>
+        </div>
+        <section>
+            <div class="buttonHolder">
+                <input type="button" class="button" id="startGameButton" value="Start the game" style="font-size:17px">
+                <input type="button" class="button" id="howToPlayButton" value="How to Play" style="font-size:17px">
+                <!-- <input hidden type="button" class="button" id="nextHoleButton" value="Next Hole>>" style="font-size:17px"> -->
+            </div>
+            <div id="instructions" class="instructions">
+                <p>1. Aim the ball with right and left arrow keys</p>
+                <p>2. Click space to get your power</p>
+                <p>3. Get the ball in the hole in the least amount of strokes</p>
+            </div>
+            <div id="hengolfpic">
+                <img id="youdeegolf" src="/images/youdee_golf.png" class="center">
+            </div>
+            <div id="henthumbsup">
+                <img id="youdeethumbsup" src="/images/youdee_thumbsup.png" class="center" style="display: none;">
+            </div>
+            <div id="container">
+                <div id="game">
+                
+                </div>
+            </div>
+            <div id="scorecard" class="scorecard">
+                <table>
+                    <tr>
+                        <th>Hole</th>
+                        <th>Stroke</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td id="h1score">0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td id="h2score">0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td id="h3score">0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td id="h4score">0</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td id="h5score">0</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td id="h6score">0</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td id="h7score">0</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td id="h8score">0</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td id="h9score">0</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td id="totalscore">0</td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+        <script type="module" src="hole.js"></script>
+        <script type="module" src="ball.js"></script>
+        <script type="module" src="powa.js"></script>
+    </body>
+</html>

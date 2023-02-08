@@ -1,0 +1,611 @@
+body{
+    background-color: navy;
+    color: yellow;
+    text-align: center;
+}
+h1{
+    background-color: yellow;
+    color: navy;
+    text-align: center;
+    border-radius: 15px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.button{
+    border-radius: 10px;
+    background-color: yellow;
+    color: navy;
+}
+.buttonHolder{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+}
+
+.center{
+    background-color: navy;
+    color: yellow;
+    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    justify-content: center;
+    width: 100px;
+    display: none;
+
+}
+
+.instructions{
+    border: 1px gray;
+    background-color: navy;
+    color: yellow;
+    text-align: center;
+    left: 50%;
+    margin-right: -50%;
+    justify-content: center;
+    width: 100px;
+    display: none;
+}
+
+table{
+    right: 50px;
+    top: 87px;
+    position: fixed;
+    text-align: center;
+    border: 3px solid yellow;
+    border-collapse: collapse;
+    border-radius: 15px;
+    width: 200px;
+    height: 100px;
+}
+th{
+    border: 3px solid yellow;
+    background-color: rgb(0, 0, 61);;
+    height: 50px;
+    border-collapse: collapse;
+}
+td{
+    border: 3px solid yellow;
+    background-color: rgb(40, 40, 40);
+    height: 50px;
+    border-collapse: collapse;
+}
+.scorecard{
+    display: none;
+}
+.youdeegolf{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#game{
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+#cup {
+    width: 15px;
+    height: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 25px;
+    border: 1px solid darkgreen;
+    background: gainsboro;
+    position: absolute;
+    z-index: 98;
+  }
+
+#tee{
+    background: lightgreen;
+    border: 1px solid darkgreen;
+    position: absolute;
+    z-index: 97;
+}  
+
+.hole{
+    background-color:green;
+    border:3px solid brown;
+}
+
+
+#hole1{
+    width:100px;
+    height:500px;
+    position: absolute;
+    z-index: 1;
+}
+
+#hole2{
+    width: 80px;
+    height: 500px;
+    position: absolute;
+    z-index:2;
+}
+
+#hole2-2{
+    width: 300px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 83px;
+    z-index:3;
+    border-left: 0px;
+    border-left: 0px;
+}
+
+#hole2-3{
+    width: 0px;
+    height: 30px;
+    position: absolute;
+    top: 23;
+    left: 250;
+    z-index: 4;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole3-1{
+    width: 80px;
+    height: 500px;
+    position: absolute;
+    z-index:2;
+}
+
+#hole3-2{
+    width: 220px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 83px;
+    z-index:2;
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+
+#hole3-3{
+    width: 80px;
+    height: 500px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 300;
+}
+
+#hole4-2{
+    width: 46px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: absolute;
+    top: 150;
+    z-index: 2;
+}
+
+#hole4-3{
+    width: 46px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: absolute;
+    left: 58;
+    top: 250;
+    z-index: 2;
+}
+
+#hole4-4{
+    width: 46px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: absolute;
+    top: 350;
+    z-index: 2;
+}
+
+#hole5-2{
+    width: 22px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: absolute;
+    left: 3;
+    top: 300;
+    z-index: 2;
+}
+
+#hole5-3{
+    width: 22px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: absolute;
+    left: 42;
+    top: 300;
+    z-index: 2;
+}
+
+#hole5-4{
+    width: 22px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: absolute;
+    left: 81;
+    top: 300;
+    z-index: 2;
+}
+
+#hole5-5{
+    width: 20px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: absolute;
+    left: 23;
+    top: 200;
+    z-index: 2;
+}
+
+#hole5-6{
+    width: 20px;
+    height: 0px;
+    border: 0px;
+    border-top: 3px solid brown;
+    position: relative;
+    left: 63;
+    top: 200;
+    z-index: 2;
+}
+
+#hole6{
+    width:80px;
+    height:500px;
+    position: absolute;
+    z-index: 1;
+}
+
+#hole6-1{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 200;
+    border-right: 0px;
+    left: -80px;
+}
+
+#hole6-2{
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 200;
+    border-left: 0px;
+    left: 83;
+}
+
+#hole6-3{
+    width: 55px;
+    height: 0px;
+    position: absolute;
+    z-index: 3;
+    top: 230;
+    left: -10;
+    border-top: 0px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+
+#hole6-4{
+    width: 55px;
+    height: 0px;
+    position: absolute;
+    z-index: 3;
+    top: 274;
+    left: 55;
+    border-top: 0px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+}
+
+#hole7-1{
+    width: 70px;
+    height: 30px;
+    border-bottom: 0px;
+    position: absolute;
+    top: 100;
+    z-index: 3;
+}
+
+#hole7-2{
+    width: 60px;
+    height: 30px;
+    border-bottom: 0px;
+    position: absolute;
+    top: 200;
+    left: 40;
+    z-index: 3;
+}
+
+#hole7-3{
+    width: 50px;
+    height: 20px;
+    border-bottom: 0px;
+    position: absolute;
+    top: 300;
+    z-index: 3;
+}
+
+#hole8{
+    width: 70px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+}
+
+#hole8-1{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 90;
+    left: 73;
+    border-left: 0px;
+    border-right: 0px;
+    z-index: 2;
+}
+
+#hole8-2{
+    width: 70px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    left: 220;
+}
+
+#hole8-3{
+    width: 15px;
+    height:0px;
+    z-index: 3;
+    position: absolute;
+    top: 150;
+    left: 30;
+    border-top: 0px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+}
+
+#hole8-4{
+    width: 15px;
+    height:0px;
+    z-index: 3;
+    position: absolute;
+    top: 135;
+    left: 250;
+    border-top: 0px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+
+#hole8-5{
+    width: 0px;
+    height: 15px;
+    border-left: 0px;
+    position: absolute;
+    z-index: 4;
+    left: 148;
+    top: 110;
+}
+
+
+#hole9-4{
+    width: 220px;
+    height: 40px;
+    position: absolute;
+    top: 300;
+    left: 83px;
+    z-index:2;
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+
+#hole9-5{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 303;
+    left: 93px;
+    z-index:3;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole9-6{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 330;
+    left: 123px;
+    z-index:3;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole9-7{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 303;
+    left: 153px;
+    z-index:3;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole9-8{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 330;
+    left: 183px;
+    z-index:3;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole9-9{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 303;
+    left: 213px;
+    z-index:3;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole9-10{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 330;
+    left: 243px;
+    z-index:3;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole9-11{
+    width: 0px;
+    height: 10px;
+    position: absolute;
+    top: 303;
+    left: 273px;
+    z-index:3;
+    border-bottom: 0px;
+    border-left: 0px;
+}
+
+#hole9-13{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 19;
+    left: 145;
+    z-index: 9;
+    border-left: 0px;
+}
+
+
+#ball {
+    width: 14px;
+    height: 14px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 20px;
+    z-index:99;
+    background: white;
+    position: absolute;
+  }
+
+
+  #Powa{
+    width:20px;
+    height:490px;
+    left: 5px;
+    bottom: 30px;
+    background-image: linear-gradient(red, rgb(95, 232, 16), red);
+    border: 3px solid #000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 20px;
+    position: fixed;
+    z-index:100;
+  }
+
+
+
+ @keyframes sweeps {
+	from { transform: translate3d(0, 0, 0);}
+    to { transform: translate3d(0, -465px,0);}
+  }
+  #line{
+    width: 20px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    /*top: 50%;
+    left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*animation:sweep 4.5s;
+	animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+	animation-iteration-count: infinite;  
+    animation-play-state: running;*/
+	
+    z-index:110;
+}
+
+#arrow{
+    height:20px;
+    width:3px;
+    background-image: linear-gradient(blue, black);
+    background-size:3px,30px;
+    background-size: cover;
+    position: absolute;
+    z-index:101;
+    transform-origin: top;
+
+}
+/*
+#arrow{
+   content:"";
+   position:absolute;
+   width:0;
+   height:0;
+   border-style:solid;
+   
+   border-width:5px 0 5px 8.6px;
+   border-color:transparent transparent transparent red;
+   left:100px;
+   top:100px;
+   box-sizing:border-box;
+   filter:drop-shadow(0 2px 4px rgba(0,0,0,.5));
+   border-image:gradient(yellow,blue);
+   transform-origin: 3.5px 0px;
+   
+   z-index:101;*/
+
+#hole9-13{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 19;
+    left: 145;
+    z-index: 9;
+    border-left: 0px;
+}
+
+
+#ball {
+    width: 14px;
+    height: 14px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 20px;
+    z-index:99;
+    background: white;
+    position: absolute;
+  }
